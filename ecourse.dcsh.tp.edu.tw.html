@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="zh-tw" xml:lang="zh-tw">
+<head>
+    <title>大直e課室 / Dazhi e-Course</title>
+    <link rel="shortcut icon" href="https://ecourse.dcsh.tp.edu.tw/theme/image.php/fordson/theme/1578099466/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 大直e課室 / Dazhi e-Course" />
+<link rel="stylesheet" type="text/css" href="https://ecourse.dcsh.tp.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ecourse.dcsh.tp.edu.tw/theme/styles.php/fordson/1578099466_1578035136/all" />
+<link rel="stylesheet" type="text/css" href="https://ecourse.dcsh.tp.edu.tw/filter/syntaxhighlighter/styles/rainbow.min.css" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/ecourse.dcsh.tp.edu.tw","sesskey":"ZWkpj2AwkD","sessiontimeout":"7200","themerev":"1578099466","slasharguments":1,"theme":"fordson","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1578099441","admin":"admin","svgicons":true,"usertimezone":"Asia\/Taipei","contextid":2,"langrev":1579032489,"templaterev":"1578099441"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/ecourse.dcsh.tp.edu.tw\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ecourse.dcsh.tp.edu.tw\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ecourse.dcsh.tp.edu.tw\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ecourse.dcsh.tp.edu.tw\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ecourse.dcsh.tp.edu.tw\/theme\/yui_combo.php?m\/1578099441\/","combine":true,"comboBase":"https:\/\/ecourse.dcsh.tp.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"m\/1578099441\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/ecourse.dcsh.tp.edu.tw\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/ecourse.dcsh.tp.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1578099441\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ecourse.dcsh.tp.edu.tw\/lib\/javascript.php\/1578099441\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ecourse.dcsh.tp.edu.tw\/lib\/javascript.php\/1578099441\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<meta name="description" content="Dazhi e-Course | 大直高中Moodle學習平台" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-site-index" class="format-site course path-site chrome dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam ecourse-dcsh-tp-edu-tw pagelayout-frontpage course-1 context-2 notloggedin ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳到主要內容</a>
+</div><script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/babel-polyfill/polyfill.min.js"></script>
+<script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/mdn-polyfills/polyfill.js"></script>
+<script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/theme/jquery.php/core/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-fhs  navbar-student navbar-expand moodle-has-zindex">
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">側板</span></button>
+            </div>
+            <a href="https://ecourse.dcsh.tp.edu.tw" class="navbar-brand 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">大直e課室</span>
+            </a>
+            
+            <!-- course_controls -->
+            <div class="coursecontrols nav-item d-flex">
+                
+                
+            </div>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                
+                <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5e1ee1b885de05e1ee1b87aceb4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-5e1ee1b885de05e1ee1b87aceb4">
+        大直高中
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-5e1ee1b885de05e1ee1b87aceb4" aria-labelledby="drop-down-5e1ee1b885de05e1ee1b87aceb4">
+                <a class="dropdown-item" role="menuitem" href="https://web.dcsh.tp.edu.tw/" title=" 學校網站"> 學校網站</a>
+                <a class="dropdown-item" role="menuitem" href="https://site.dcsh.tp.edu.tw/schoolday/" title=" 教學計畫"> 教學計畫</a>
+                <a class="dropdown-item" role="menuitem" href="http://sub.dcsh.tp.edu.tw/" title=" 學科網站"> 學科網站</a>
+    </div>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://ecourse.dcsh.tp.edu.tw/course/" title="課程搜尋">課程搜尋</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="https://e-portfolio.cooc.tp.edu.tw/" title="學生學習歷程">學生學習歷程</a>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <div class="d-none d-lg-block">
+                
+            </div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><span class="login">您尚未登入 (<a href="http://dzsh.pythonanywhere.com/message/create/">登入</a>)</span></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+
+    <div id="page" class="container-fluid">
+
+        <div id="learningcontent">
+
+        
+        
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+                <div class="headerbkg"><div class="customimage" style="background-image: url(&quot;//ecourse.dcsh.tp.edu.tw/pluginfile.php/1/theme_fordson/headerdefaultimage/1578099466/IMG_20190606_082507.jpg&quot;); background-size: cover; background-position:center;
+                width: 100%; height: 100%;"></div></div>
+            <div class="card-body ">
+                <div class="d-flex">
+                    <div class="mr-auto">
+                        <a href="https://ecourse.dcsh.tp.edu.tw/course/view.php?id=1"><div class="logo"><img src="https://ecourse.dcsh.tp.edu.tw/pluginfile.php/1/core_admin/logo/0x150/1578099466/logo.png-image3047-4294966510.png" alt="大直e課室 / Dazhi e-Course" class="img-fluid" /></div></a>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks">
+
+
+                            <span class="notifications" id="user-notifications"></span>
+                            
+                            
+
+                            <div class="fpwonderbox">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+
+
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+
+                <div class="fptextbox">
+                    
+                </div>
+
+    </div>
+    </div>
+    </div>
+    <div style="clear:both;"></div>
+
+
+</div>
+
+                                <div class="fp-blocks">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                    <section data-region="blocks-fpa" class="hidden-print">
+                                                        <aside id="block-region-fp-a" class="block-region" data-blockregion="fp-a" data-droptarget="1"></aside>
+                                                    </section>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <section data-region="blocks-fpb" class="hidden-print">
+                                                        <aside id="block-region-fp-b" class="block-region" data-blockregion="fp-b" data-droptarget="1"></aside>
+                                                    </section>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <section data-region="blocks-fpc" class="hidden-print">
+                                                        <aside id="block-region-fp-c" class="block-region" data-blockregion="fp-c" data-droptarget="1"></aside>
+                                                    </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div role="main"><span id="maincontent"></span><div class="box py-3 generalbox sitetopic"><ul class="section img-text"><li class="activity bootstrapelements modtype_bootstrapelements " id="module-2020"><div><div class="mod-indent-outer"><div class="mod-indent"></div><div><div class="contentwithoutlink "><div class="no-overflow"><div><h4><i class="fa "></i>歡迎使用大直e課室</h4><div><div class="no-overflow"><p>系統內多數為封閉式課程，需要以帳號密碼登入後方能瀏覽課程內容並參與課程活動。</p>
+<p>學生帳號預設為「學號」，密碼預設為「身分證字號」(第一碼英文字母請大寫)。</p>
+<p>教師帳號及密碼請洽圖書館資訊組。</p></div></div></div></div></div></div></div></div></li></ul></div><a class="skip-block skip" href="#skipsitenews">跳過 網站公告</a><div id="site-news-forum"><h2>網站公告</h2><div id="discussion-list-5e1ee1b88aa5d5e1ee1b87aceb5" data-contextid="26" data-cmid="2" data-name="網站公告" data-group="" data-grading-component="" data-grading-component-subtype="" data-gradable-itemtype="forum" data-initialuserid="2" >
+
+
+    
+
+
+    <div class="p-t-1 p-b-1">
+    </div>
+
+           <article
+    id="p1553"
+    class="forum-post-container mb-2"
+    data-post-id="1553"
+    data-region="post"
+    data-target="1553-target"
+    tabindex="0"
+    aria-labelledby="post-header-1553"
+    aria-describedby="post-content-1553"
+>
+    <div
+        class="d-flex border p-2 mb-2 forumpost focus-target  "
+        aria-label='108學年度學生帳號及班級模型已建立 是由 系統 管理員張貼'
+        data-post-id="1553" data-content="forum-post"
+    >
+        
+
+        <div class="d-flex flex-column w-100"  data-region-content="forum-post-core">
+            <header  class="mb-2 header row d-flex">
+                        <div class="mr-2" style="width: 45px;">
+                                <img
+                                    class="rounded-circle w-100"
+                                    src="https://ecourse.dcsh.tp.edu.tw/theme/image.php/fordson/core/1578099466/u/f1"
+                                    alt="系統 管理員的相片"
+                                    aria-hidden="true"
+                                    title="系統 管理員的相片"
+                                >
+                        </div>
+                <div class="d-flex flex-column">
+                    <h3 class="h6 font-weight-bold mb-0" data-region-content="forum-post-core-subject" data-reply-subject="回應: 108學年度學生帳號及班級模型已建立" >108學年度學生帳號及班級模型已建立</h3>
+                        <address tabindex="-1">
+                            由<a href="https://ecourse.dcsh.tp.edu.tw/user/view.php?id=2">系統 管理員</a>發表於<time>2019年 08月 23日(Fri) 21:37</time>
+                        </address>
+                </div>
+            </header>
+
+            <div class="d-flex body-content-container">
+                        <div class="mr-2 author-groups-container" style="width: 45px; flex-shrink: 0">
+                        </div>
+
+                <div class="no-overflow w-100 content-alignment-container">
+                    <div id="post-content-1553" class="post-content-container">
+                        <div id="post-content-1217" class="post-content-container">
+<p id="yui_3_17_2_1_1472085176390_88">108學年度學生帳號及班級模型已建立，</p>
+<p id="yui_3_17_2_1_1472085176390_171">新生帳號密碼預設如下：</p>
+<ul id="yui_3_17_2_2_1438576689679_254">
+<li id="yui_3_17_2_2_1438576689679_255">帳號：學號<br />例：10835987</li>
+<li id="yui_3_17_2_2_1438576689679_253">預設密碼：身分證字號，英文字母請大寫<br />例：X123456789</li>
+</ul>
+<p id="yui_3_17_2_1_1472085176390_175">舊生之密碼未變更，請以修改過之密碼登入系統。</p>
+</div>
+                    </div>
+
+
+
+                        
+
+
+                            <div class="d-flex flex-wrap">
+                                    <div
+                                        class="post-actions d-flex align-self-end justify-content-end flex-wrap ml-auto"
+                                        data-region="post-actions-container"
+                                        role="menubar"
+                                        aria-label='108學年度學生帳號及班級模型已建立 是由 系統 管理員張貼'
+                                        aria-controls="p1553"
+                                    >
+                                                <a
+                                                    data-region="post-action"
+                                                    href="https://ecourse.dcsh.tp.edu.tw/mod/forum/discuss.php?d=1048#p1553"
+                                                    class="btn btn-link"
+                                                    title="Permanent link to this post"
+                                                    aria-label="Permanent link to this post"
+                                                >
+                                                    永久鏈接
+                                                </a>
+                                    </div>
+                            </div>
+
+                                           <div class="link text-right">
+                       <a href="https://ecourse.dcsh.tp.edu.tw/mod/forum/discuss.php?d=1048">討論這一議題</a>&nbsp;(至今有 0 篇回應)
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div data-region="replies-container">
+        </div>
+</article>
+            <a href="https://ecourse.dcsh.tp.edu.tw/mod/forum/view.php?id=2">過期的主題...</a>
+
+</div></div><span class="skip-block-to" id="skipsitenews"></span><br /><a class="skip-block skip" href="#skipcategories">跳過 課程類別</a><div id="frontpage-category-names"><h2>課程類別</h2><div class="course_category_tree clearfix frontpage-category-names"><div class="collapsible-actions"><a class="collapseexpand collapse-all" href="#">全部縮合</a></div><div class="content"><div class="subcategories"><div class="category loaded with_children" data-categoryid="27" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=27">108學年度</a><span title="課程數" class="numberofcourse"> (8)</span></h3></div><div class="content"><div class="subcategories"><div class="category notloaded" data-categoryid="28" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=28">108上學期</a><span title="課程數" class="numberofcourse"> (27)</span></h4></div><div class="content"></div></div></div></div></div><div class="category loaded with_children" data-categoryid="12" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=12">校務發展</a><span title="課程數" class="numberofcourse"> (3)</span></h3></div><div class="content"><div class="subcategories"><div class="category notloaded" data-categoryid="11" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=11">專案計畫</a><span title="課程數" class="numberofcourse"> (4)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="7" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=7">領域共同備課</a></h4></div><div class="content"></div></div></div></div></div><div class="category loaded with_children" data-categoryid="1" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=1">課程封存區</a><span title="課程數" class="numberofcourse"> (8)</span></h3></div><div class="content"><div class="subcategories"><div class="category notloaded with_children collapsed" data-categoryid="24" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=24">107學年度</a><span title="課程數" class="numberofcourse"> (17)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="21" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=21">106學年度</a><span title="課程數" class="numberofcourse"> (15)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="16" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=16">105學年度</a><span title="課程數" class="numberofcourse"> (12)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="13" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=13">104學年度</a><span title="課程數" class="numberofcourse"> (8)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="5" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=5">103學年度</a><span title="課程數" class="numberofcourse"> (10)</span></h4></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="2" data-depth="2" data-showcourses="5" data-type="0"><div class="info"><h4 class="categoryname"><a href="https://ecourse.dcsh.tp.edu.tw/course/index.php?categoryid=2">102學年度</a></h4></div><div class="content"></div></div></div></div></div></div></div></div></div><span class="skip-block-to" id="skipcategories"></span><br /><div class="box py-3 mdl-align"><form action="https://ecourse.dcsh.tp.edu.tw/course/search.php" id="coursesearch" method="get" class="form-inline">
+    <fieldset class="coursesearchbox invisiblefieldset">
+        <label for="shortsearchbox">搜尋課程</label>
+        <input id="shortsearchbox" name="q" type="text" size="12" value="" class="form-control">
+        <input name="areaids" type="hidden" value="core_course-course">
+        <button class="btn btn-secondary" type="submit">Go</button>
+            <a class="btn btn-link p-0" role="button"
+                data-container="body" data-toggle="popover"
+                data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;您可以同時使用多關鍵字來搜尋。並以下列方法來改進您的搜尋&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;word -- 搜尋任何包含有此關鍵字的內容。
+&lt;/li&gt;&lt;li&gt;+word -- 只有完全吻合這些關鍵字才會被找出來。
+&lt;/li&gt;&lt;li&gt;-word -- 排除含有此關鍵字的結果。
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt; "
+                data-html="true" tabindex="0" data-trigger="focus">
+              <i class="icon fa fa-question-circle text-info fa-fw "  title="搜尋課程的輔助" aria-label="搜尋課程的輔助"></i>
+            </a>
+    </fieldset>
+</form></div><br /></div>
+                            
+                            
+
+                </section>
+
+                    <section data-region="blocks-column" class="hidden-print">
+                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">跳過 主選單</a>
+
+<section id="inst1"
+     class=" block_site_main_menu block list_block  card mb-3"
+     role="complementary"
+     data-block="site_main_menu"
+          aria-labelledby="instance-1-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-1-header" class="card-title d-inline">主選單</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><div class="main-menu-content"><div class="activity"><a class="" onclick="" href="https://ecourse.dcsh.tp.edu.tw/mod/forum/view.php?id=2"><img src="https://ecourse.dcsh.tp.edu.tw/theme/image.php/fordson/forum/1578099466/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true" /><span class="instancename">網站公告<span class="accesshide " > 討論區</span></span></a></div></div></div></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">跳過 導覽</a>
+
+<section id="inst4"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+          aria-labelledby="instance-4-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4-header" class="card-title d-inline">導覽</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch current_branch" aria-labelledby="label_1_1"><p class="tree_item branch active_tree_node canexpand navigation_node" role="treeitem" aria-expanded="true" aria-owns="random5e1ee1b87aceb1_group" data-collapsible="false"><a tabindex="-1" id="label_1_1" href="https://ecourse.dcsh.tp.edu.tw/">首頁</a></p><ul id="random5e1ee1b87aceb1_group" role="group"><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_5"><p class="tree_item branch" role="treeitem" id="expandable_branch_0_courses" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0"><a tabindex="-1" id="label_2_5" href="https://ecourse.dcsh.tp.edu.tw/course/index.php">課程</a></p></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span><a href="#sb-4" class="sr-only sr-only-focusable">跳過 教學資源連結</a>
+
+<section id="inst10747"
+     class=" block_html block  card mb-3"
+     role="complementary"
+     data-block="html"
+          aria-labelledby="instance-10747-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-10747-header" class="card-title d-inline">教學資源連結</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><ul>
+<li>官方資源
+
+<ul>
+<li><a href="http://cooc.tp.edu.tw/">臺北酷課雲</a></li>
+<li><a href="https://cloud.edu.tw/">教育雲</a></li>
+<li><a href="http://stv.moe.edu.tw/" title="">教育部國中小學習網(愛學網)</a></li>
+<li><a href="https://isp.moe.edu.tw/" title="教育部整合各縣市教學資源，提供教師搜尋教學資源的多元管道。">教育部數位教學資源入口網</a></li>
+<li><a href="http://etweb.tp.edu.tw/" title="">臺北益教網</a></li>
+<li><a href="http://ed.arte.gov.tw/ch/index/index.aspx" title="">臺灣藝術教育網</a></li>
+<li><a href="http://eteacher.edu.tw/" title="">中小學網路素養認知網站</a></li>
+<li><a href="http://www.tipo.gov.tw/ch/AllInOne_Show.aspx?path=2279&amp;guid=66997e1e-a468-4640-ab5b-7332e1132692&amp;lang=zh-tw" title="">教師授課著作權錦囊</a></li>
+<li><a href="http://hsmaterial.moe.edu.tw/" title="">高中學科資訊融入教學教材發展計畫</a></li>
+<li><a href="http://192.192.169.235:8080/otc/opencms/otcFileSystem/testStore/testSearch.jsp" title="http://www.nioerar.edu.tw/">國中高中學校題庫網</a></li>
+</ul></li>
+<li><a href="http://documentaryaddict.com/" title="Documentary Addict 號稱地表最大、內容最豐富的紀錄片收集、策劃頻道，目前共提供 26 種分類，以及接近五千種各式各樣的紀錄片資源，這些影像並不是由網站本身託管、儲存，而是從網路上整理而來，包括維基百科、YouTube、Vimeo 等等，經過篩選分類，加入一些簡單介紹後，讓使用者更容易檢索，找到自己需要的紀錄片。">Documentary Addict</a></li>
+<li><a href="http://www.masters.tw/" title="鄭永銘老師自1997年起經營 JBNlogo_new《歡樂氣球網》，參加經濟部首屆網站設計比賽，榮獲「最佳主題特色獎」，鄭老師於網站上教授氣球佈置、魔術技巧等。「跟著鄭大師玩科學」初始為鄭老師的Facebook文章集結，部分讀者之回應文章由Facebook留言複製而來，因此有留言時間於同一天之狀況，請讀者包涵。">跟著鄭大師玩科學</a></li>
+<li><a href="http://www.google.com/" title="">Google 資源</a>
+
+<ul>
+<li><a href="http://www.google.com/culturalinstitute/" title="">Google 文化學院</a>
+
+<ul>
+<li><a href="http://www.googleartproject.com/zh-tw/" title="http://playpcesor.blogspot.com/2012/04/google-art-project.html">Google Art Project</a></li>
+<li><a href="http://www.google.com/intl/en/culturalinstitute/worldwonders/" title="">Google World Wonders 計畫</a></li>
+<li><a href="http://www.google.com/culturalinstitute/project/historic-moments" title="透過線上展覽，深入瞭解人類史上重大時刻背後的故事。每一組展覽都運用了文件、相片和影片來呈現歷史事件，部分展覽還提供相關人物的個人陳述。">歷史性的時刻</a></li>
+</ul></li>
+<li><a href="http://www.google.com/intl/zh-TW/maps/about/behind-the-scenes/streetview/treks/" title="">Google 街景服務之旅</a></li>
+<li><a href="https://www.youtube.com/audiolibrary" title="">Youtube 免費音樂庫</a></li>
+</ul></li>
+<li><a href="http://macaulaylibrary.org/" title="Macaulay Library 大自然蟲魚鳥獸影片、聲音資料庫（全球最大、最完整）">Macaulay Library</a></li>
+<li><a href="https://openclipart.org/" title="比起美感設計用途，「 Open Clip Art 」這個圖庫擁有大量商務、教育應用需要的小插圖，全部美工圖案都提供「 SVG 向量圖檔」與「 PNG 圖檔」下載，並且採用公有領域授權，也就是你可以使用在商業用途，你可以修改圖檔。更棒的是「 Open Clip Art 」是一個已經發展 10 年的計劃，有好幾萬設計師在網站上貢獻自己的設計作品，網站每天都有新的插圖更新，目前近 70000 張的美工圖案中包含了許多符合最新時事、物品、概念的插圖。">Open Clipart</a></li>
+<li><a href="http://sub.dcsh.tp.edu.tw/node/17" title="創用CC素材">創用CC相關</a>
+
+<ul>
+<li><a href="http://www.jamendo.com/en/" title="">Jamendo創用CC授權音樂網站</a></li>
+<li><a href="http://photopin.com/" title="PhotoPin 的搜尋範圍不是全網路，而是世界最大的線上相簿提供者 Flickr ，結合 Flickr API 端口，使用者只需要輸入要查找的相片關鍵字，就可以在 PhotoPin 內輕鬆搜尋到使用 Creative Commons 授權（簡稱創用 CC 授權）的相片。全文網址: Photo Pin免費圖庫 可合法使用的高品質相片 | 網路衝浪 | 線上漫遊 | udn數位資訊 http://mag.udn.com/mag/digital/storypage.jsp?f_ART_ID=391832#ixzz1w7pqEYf1 Power By udn.com ">Photo Pin</a></li>
+<li><a href="http://search.creativecommons.org/" title="">創用CC素材搜尋</a></li>
+<li><a href="http://creativecommons.tw/search" title="">創用CC素材搜尋(臺灣版)</a></li>
+<li><a href="http://get.nccu.edu.tw:8080/get/" title="">臺灣通識網</a></li>
+<li><a href="http://dig.ccmixter.org/">dig.ccMixter 免費授權音樂下載</a> <a href="https://www.playpcesor.com/2018/03/digccmixter.html">介紹</a></li>
+</ul></li>
+<li><a href="http://www.water.tku.edu.tw/sub91/mpg_play.aspx" title="">地層下陷防治3D動畫短片「不想長高」</a></li>
+<li><a href="http://www.playpcesor.com/2017/09/5-taiwan-pictures.html" title="">台灣老照片圖庫介紹(電腦玩物)</a>
+
+<ul>
+<li><a href="http://photo.lib.ntu.edu.tw/pic/db/oldphoto.jsp" title="">台灣舊照片資料庫(臺大圖書館)</a></li>
+<li><a href="http://taipics.com/" title="">台灣老照片圖庫</a></li>
+<li><a href="http://catalog.digitalarchives.tw/Organization/List.jsp?CID=58636" title="">典藏台灣</a></li>
+<li><a href="http://newnrch.digital.ntu.edu.tw/nrch/query.php?keyword=%E8%80%81%E7%85%A7%E7%89%87&amp;advanced" title="">國家文化資料庫</a></li>
+</ul></li>
+<li><a href="http://www.playpcesor.com/2017/10/chinese-Character-popular-science.html">漢字科普字典網站介紹(電腦玩物)</a>
+
+<ul>
+<li><a href="http://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/" title="完整的甲骨文、金文、戰國簡帛文字、小篆等古文字資料，並且由專家學者撰寫古文字的科學解釋。">漢語多功能字庫</a></li>
+<li><a href="http://chardb.iis.sinica.edu.tw/" title="非把所有文字演變資料羅列而出，而是編審出最具有代表性的甲骨文、金文、簡帛文字到小篆的代表字，然後輔以清楚扼要的解說，有助於一般使用者快速了解一個漢語文字的演變和本義。">國際電腦漢字與異體字資料庫</a></li>
+<li><a href="http://xiaoxue.iis.sinica.edu.tw/" title="科學考證漢語文字形音義演變的學問。除了搜尋文字可以找到本站的古文字資料外，還會索引很多外站的文字解釋資料，所以一次就可以找到大量的文字相關資料內容，節省很多時間，是非常棒的索引工具。">小學堂</a></li>
+<li><a href="http://www.ccamc.co/index.php" title="綜合性的包含了古文字圖示、說文解字、康熙字典等等材料，對於漢字研究提供了一定程度的方便性。">古今文字集成</a></li>
+<li><a href="http://hanziyuan.net/" title="熱愛古漢字的美國人，年輕時自費離家，隻身到台灣學習漢字，後來創立了「Chinese Etymology 字源」網站，專門收集甲骨文、金文等古文字圖形，建立了這樣一個古漢字的搜尋引擎。">Chinese Etymology 字源</a></li>
+<li><a href="http://ytenx.org/" title="由郭家寶先生個人架設的漢語音韻檢索字典，它的介面非常順暢易用，內容則包含了廣韻、中原音韻等韻書內容。對於搜尋漢語的古聲調，是一個很實用的網站。">韻典網</a></li>
+<li><a href="http://www.shuowen.org/" title="由個人架設的「說文解字字典」，讓我們不用去翻厚厚一本的說文解字，可以用搜尋的方式，快速找到某一個漢字，在說文解字裡的解釋，尤其是這個文字在文化裡的意涵。">說文解字</a></li>
+<li><a href="https://www.moedict.tw/">萌典</a></li>
+</ul></li>
+</ul>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-4"></span><a href="#sb-5" class="sr-only sr-only-focusable">跳過 行事曆</a>
+
+<section id="inst3"
+     class=" block_calendar_month block  card mb-3"
+     role="complementary"
+     data-block="calendar_month"
+          aria-labelledby="instance-3-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-3-header" class="card-title d-inline">行事曆</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="calendar-month-2020-January-5e1ee1b882f315e1ee1b87aceb2"  data-template="core_calendar/month_mini"  data-includenavigation="false" data-mini="true">
+    <div id="month-mini-2020-January-5e1ee1b882f315e1ee1b87aceb2" class="calendarwrapper" data-courseid="1" data-categoryid="0" data-month="1" data-year="2020" data-day="15" data-view="month">
+        <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="裝載中" aria-label="裝載中"></i></span>
+        </span>
+        <table class="minicalendar calendartable">
+            <caption class="calendar-controls">
+                    <h3>
+                        <a href="https://ecourse.dcsh.tp.edu.tw/calendar/view.php?view=month&time=1579082168" title="這個月">2020年 01月</a>
+                    </h3>
+            </caption>
+            <thead>
+              <tr>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期日">日</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期一">一</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期二">二</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期三">三</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期四">四</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期五">五</abbr>
+                    </th>
+                    <th class="header text-xs-center" scope="col">
+                        <abbr title="星期六">六</abbr>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-region="month-view-week">
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="day text-center" data-day-timestamp="1577808000">
+                                1
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1577894400">
+                                2
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1577980800">
+                                3
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1578067200">
+                                4
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center weekend" data-day-timestamp="1578153600">
+                                5
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578240000">
+                                6
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578326400">
+                                7
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578412800">
+                                8
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578499200">
+                                9
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578585600">
+                                10
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1578672000">
+                                11
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center weekend" data-day-timestamp="1578758400">
+                                12
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578844800">
+                                13
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1578931200">
+                                14
+                            </td>
+                        <td class="day text-center today" data-day-timestamp="1579017600">
+                                    <a  id="calendar-day-popover-link-1-2020-14-5e1ee1b882f315e1ee1b87aceb2" href="https://ecourse.dcsh.tp.edu.tw/calendar/view.php?view=day&amp;time=1579017600" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover" data-placement="top" data-year="2020" data-month="1" data-courseid="1" data-categoryid="0" data-title="今天01月 15日 Wednesday" data-alternate="沒事件">15</a>
+    <div class="hidden">
+        
+    </div>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579104000">
+                                16
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579190400">
+                                17
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1579276800">
+                                18
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center weekend" data-day-timestamp="1579363200">
+                                19
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579449600">
+                                20
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579536000">
+                                21
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579622400">
+                                22
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579708800">
+                                23
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1579795200">
+                                24
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1579881600">
+                                25
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center weekend" data-day-timestamp="1579968000">
+                                26
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1580054400">
+                                27
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1580140800">
+                                28
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1580227200">
+                                29
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1580313600">
+                                30
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1580400000">
+                                31
+                            </td>
+                        <td class="dayblank">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-5"></span><section id="inst2"
+     class=" block_course_summary block no-header  card mb-3"
+     role="complementary"
+     data-block="course_summary"
+        aria-label="課程/網站摘要"
+>
+
+    <div class="card-body p-3">
+
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><div class="text_to_html"><p style="text-align: center;">Dazhi e-Course | 大直高中Moodle學習平台</p></div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section></aside>
+                    </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+    <nav class="list-group" aria-label="網站">
+        <ul>
+                <li>
+                    <a class="list-group-item list-group-item-action active" href="https://ecourse.dcsh.tp.edu.tw/" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" >
+                        <div class="ml-0">
+                            <div class="media">
+                                    <span class="media-left">
+                                        <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+                                    </span>
+                                <span class="media-body font-weight-bold">首頁</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+</div>
+
+
+<footer id="page-footer" class="py-3 text-light">
+    <div class="container">
+
+        <div id="course-footer"></div>
+
+        <div class="row">
+
+                <div class="col-md-8">
+                    
+
+                    <div class="logininfo">您尚未登入 (<a href="https://ecourse.dcsh.tp.edu.tw/login/index.php">登入</a>)</div>
+
+                    <div class="sitelink"><a title="Moodle" href="http://moodle.org/"><img src="https://ecourse.dcsh.tp.edu.tw/theme/image.php/fordson/core/1578099466/moodlelogo_grayhat" alt="Moodle 商標" /></a></div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="brandbox">
+
+                        
+                            <ul class="footercontact">
+                                
+                                
+                                
+                            </ul>
+
+                        
+
+                    </div>
+                </div>
+
+        </div>
+        <nav class="nav navbar-nav d-md-none">
+                <ul class="list-unstyled pt-3">
+                                    <li><a href="https://web.dcsh.tp.edu.tw/" title="大直高中">大直高中</a></li>
+                                <li>
+                                    <ul class="list-unstyled ml-3">
+                                                        <li><a href="https://web.dcsh.tp.edu.tw/" title=" 學校網站"> 學校網站</a></li>
+                                                        <li><a href="https://site.dcsh.tp.edu.tw/schoolday/" title=" 教學計畫"> 教學計畫</a></li>
+                                                        <li><a href="http://sub.dcsh.tp.edu.tw/" title=" 學科網站"> 學科網站</a></li>
+                                    </ul>
+                                </li>
+                                    <li><a href="https://ecourse.dcsh.tp.edu.tw/course/" title="課程搜尋">課程搜尋</a></li>
+                                    <li><a href="https://e-portfolio.cooc.tp.edu.tw/" title="學生學習歷程">學生學習歷程</a></li>
+                </ul>
+        </nav>
+        <div class="tool_dataprivacy"><a href="https://ecourse.dcsh.tp.edu.tw/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2019111800.07&amp;lang=zh_tw&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+        
+<script type="text/javascript">
+  // <![CDATA[
+  document.addEventListener("DOMContentLoaded", function () {
+    // QRCode
+    var qrcode_holder = document.querySelector('#page-header .card-body>div:first-child');
+    var qrcode = document.createElement('img');
+    qrcode.src = 'https://chart.apis.google.com/chart?cht=qr&chs=160x160&chld=L|0&chl='+encodeURIComponent(window.location.href);
+    qrcode.classList.add('img-responsive');
+    qrcode_holder.insertAdjacentElement('beforeend', qrcode);
+    qrcode.style.zIndex = 1;
+    // Highlight JS
+    var code_blocks = document.querySelectorAll('pre>code[start]');
+    for (var code of code_blocks) {
+      var lines = code.textContent.split('\n').length;
+      var start = code.getAttribute('start') || 1;
+      var line_number = start;
+
+      for (start++, i = 2; i < lines; i++, start++) {
+        line_number += "\n" + (start);
+      }
+
+      line_number = "<code class='hljs ln'>" + line_number + "</code>";
+      code.insertAdjacentHTML('beforebegin', line_number);
+    }
+  });
+  // ]]>
+</script>
+<style>
+  code.hljs.ln {
+    float: left;
+    border-right: 1px solid grey;
+    text-align: right;
+  }
+</style><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ecourse.dcsh.tp.edu.tw/lib/requirejs.php/1578099441/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("4"); M.util.js_complete('block_navigation/navblock');});;
+
+require(['jquery'], function($) {
+    require(['theme_boost/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2020-14-5e1ee1b882f315e1ee1b87aceb2");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/selectors',
+    'core_calendar/events',
+], function(
+    $,
+    CalendarSelectors,
+    CalendarEvents
+) {
+
+    $('body').on(CalendarEvents.filterChanged, function(e, data) {
+        M.util.js_pending("month-mini-5e1ee1b882f315e1ee1b87aceb2-filterChanged");
+        // A filter value has been changed.
+        // Find all matching cells in the popover data, and hide them.
+        $("#month-mini-2020-January-5e1ee1b882f315e1ee1b87aceb2")
+            .find(CalendarSelectors.popoverType[data.type])
+            .toggleClass('hidden', !!data.hidden);
+        M.util.js_complete("month-mini-5e1ee1b882f315e1ee1b87aceb2-filterChanged");
+    });
+});
+;
+
+require(['jquery', 'core_calendar/calendar_mini'], function($, CalendarMini) {
+    CalendarMini.init($("#calendar-month-2020-January-5e1ee1b882f315e1ee1b87aceb2"), !1);
+});
+;
+
+require(['theme_boost/loader']);
+require(['jquery','theme_boost/tooltip'], function($){$('[data-tooltip="tooltip"]').tooltip()});
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+
+    require(['jquery', 'mod_forum/discussion_list'], function($, View) {
+        var root = $('#discussion-list-5e1ee1b88aa5d5e1ee1b87aceb5');
+        View.init(root);
+    });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://ecourse.dcsh.tp.edu.tw/lib/javascript.php/1578099441/theme/fordson/javascript/scrolltotop.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u6700\u5f8c\u4fee\u6539","name":"\u540d\u7a31","error":"\u932f\u8aa4","info":"\u8cc7\u8a0a","yes":"\u662f","no":"\u5426","viewallcourses":"\u700f\u89bd\u6240\u6709\u8ab2\u7a0b","cancel":"\u53d6\u6d88","collapseall":"\u5168\u90e8\u7e2e\u5408","expandall":"\u5c55\u958b\u5168\u90e8","confirm":"\u78ba\u8a8d","areyousure":"\u4f60\u78ba\u5b9a\u55ce\uff1f","closebuttontitle":"\u95dc\u9589","unknownerror":"\u672a\u77e5\u7684\u932f\u8aa4","file":"\u6a94\u6848","url":"\u7db2\u5740"},"repository":{"type":"\u985e\u578b","size":"\u5927\u5c0f","invalidjson":"\u7121\u6548\u7684JSON \u5b57\u4e32","nofilesattached":"\u6c92\u6709\u9644\u52a0\u6a94\u6848","filepicker":"\u6a94\u6848\u6311\u9078\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6c92\u6709\u53ef\u7528\u7684\u6a94\u6848","norepositoriesavailable":"\u62b1\u6b49\uff0c\u4f60\u73fe\u6709\u7684\u5009\u5132\u6c92\u6709\u4e00\u500b\u53ef\u4ee5\u56de\u5fa9\u6210\u8981\u6c42\u683c\u5f0f\u7684\u6a94\u6848\u3002","fileexistsdialogheader":"\u6a94\u6848\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u5230\u4f60\u6b63\u5728\u7de8\u8f2f\u7684\u6587\u5b57\u4e0a\u4e86","fileexistsdialog_filemanager":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u4e0a\u53bb\u4e86","renameto":"\u91cd\u65b0\u547d\u540d\u70ba{$a}","referencesexist":"\u9019\u88e1\u6709{$a}\u500b\u5225\u540d\/\u6377\u5f91\u6a94\u6848\u4f7f\u7528\u9019\u4e00\u500b\u6a94\u6848\u4f5c\u70ba\u4ed6\u5011\u8cc7\u6e90\u3002","select":"\u9078\u64c7"},"admin":{"confirmdeletecomments":"\u60a8\u5373\u5c07\u522a\u9664\u8a55\u8ad6\uff0c\u60a8\u78ba\u5b9a\u55ce\uff1f","confirmation":"\u78ba\u8a8d"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":"\uff1a"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\", \r\n    tex2jax: {\r\n        inlineMath: [['$','$'], ['\\\\(','\\\\)']],\r\n        processEscapes: true\r\n    },\r\n});\r\n","lang":"zh-hant"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-course-categoryexpander",function() {Y.Moodle.course.categoryexpander.init();
+});
+ M.util.js_pending('random5e1ee1b87aceb6'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5e1ee1b87aceb6'); });
+})();
+//]]>
+</script>
+
+
+    </div>
+
+</footer>
+
+</div>
+
+<a href="#" id="back-to-top" class="btn btn-primary btn-lg" role="button" title="Back to Top and Scrollspy"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+</body>
+</html>

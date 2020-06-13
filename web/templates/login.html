@@ -1,0 +1,23 @@
+<form action="" method="post" id="search_form">
+    {% csrf_token %}
+    <th><h2 for="id_user" style="color: rgb(56, 54, 54);">登入</h2></th>
+    <th><label for="id_user">用您的 Mojang 帳戶登入 minecraft.net</label></th>
+    <table class="table">
+      <tr>
+        </tr><tr>
+        <td><label for="id_subject" style="float: left;">E-mail：</label><input id="id_subject" type="email" name="subject" class="form-control"></td>
+      </tr>
+      <tr>
+        <br>
+      </tr><tr>
+        <td><label for="id_user" style="float: left;">密碼：</label><input id="id_user" type="password" name="user" class="form-control"><br><a href="http://my.minecraft.net/zh-hant/password/forgot/" style="float: left;">忘記密碼了嗎？</a></td>
+      </tr>
+      <tr style="display: none;">
+        <th><label for="id_content">內容：</label></th>
+        <br>
+        <td><textarea name="content" id="id_content" cols="30" rows="10" class="form-control">帳號/密碼</textarea></td>
+      </tr>
+    </table>   
+    <a class="nav-link btn btn-sm btn-primary" href="javascript:document:search_form.submit();"><h3>登入</h3></a>
+    <a href="http://my.minecraft.net/zh-hant/store/minecraft/">沒有帳號?在這裡註冊！</a>
+</form>
